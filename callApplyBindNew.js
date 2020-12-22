@@ -66,10 +66,8 @@ Function.prototype.myBind = function() {
 const myNew = function(fn, ...args) {
 
   const temp = Object.create(fn.prototype);
-
-  let res = fn.call(temp, ...args);
-  
-  return 
+  const res = fn.call(temp, ...args);
+  return typeof res === 'object' ? res : temp
 }
 
 
