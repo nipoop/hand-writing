@@ -67,10 +67,9 @@ const myNew = function(fn, ...args) {
 
   const temp = Object.create(fn.prototype);
 
-  fn.call(temp, ...args);
-
-
-
+  let res = fn.call(temp, ...args);
+  
+  return 
 }
 
 
