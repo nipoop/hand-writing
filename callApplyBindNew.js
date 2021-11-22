@@ -17,7 +17,7 @@ Function.prototype.myCall = function(context, ...args) {
     throw new Error('error');
   }
 
-  const fn = Symbol();
+  const fn = Symbol('fn');
   context[fn] = this;
   context[fn](...args);
   delete context[fn];
@@ -78,3 +78,32 @@ getName.myApply(obj1, ['n1', 'n2'])
 
 const newGetName = getName.bind(obj1, 'n1');
 newGetName('n2');
+
+
+// function Foo() {
+//   this.name = 'foo';
+
+//   return {
+//     name: 'name'
+//   }
+// }
+
+// Foo.prototype.getName = function() {
+//   return this.name;
+// }
+
+// const foo = new Foo();
+// console.log('foo', foo)
+
+
+// 
+function Foo(name) {
+  this.name = name;
+}
+
+Foo.prototype.getName = function(name) {
+  
+};
+
+const foo = new Foo('foo');
+console.log(foo.getName())

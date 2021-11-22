@@ -1,0 +1,72 @@
+
+
+.container {
+  height: 400px;
+  background-color: aqua;
+}
+
+.middle {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+}
+
+.left, .right {
+  height: 50px;
+  width: 50px;
+  background-color: cadetblue;
+}
+
+
+
+/*
+  1. position
+*/
+
+/* .container {
+  position: relative;
+}
+
+.middle {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+} */
+
+/*
+  2.flex
+*/
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ */
+
+
+/*
+  3.translate
+*/
+
+.container {
+  position: relative;
+}
+
+.middle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+/*
+  4. line=line-height 
+*/
+
+/* .middle {
+  line-height: 100px;
+  text-align: center;
+} */
+

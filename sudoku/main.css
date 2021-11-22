@@ -1,0 +1,15 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container ul {
+  display: flex;
+}
+
+.container ul li {
+  height: 50px;
+  margin: 20px;
+  background-color: blue;
+}

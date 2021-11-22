@@ -1,0 +1,38 @@
+
+/* css实现一个高度是宽度两杯，子节点宽度是父节点宽度一半的布局 */
+
+
+.container {
+  background-color: aqua;
+  position: relative;
+  padding: 25% 0;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffaa;
+}
+
+/* .container {
+  width: 100%;
+  background-color: aqua;
+  padding: 25% 0;
+  position: relative;
+}
+.child {
+  background-color: bisque;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}  */

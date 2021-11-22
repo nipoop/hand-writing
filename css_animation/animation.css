@@ -1,0 +1,16 @@
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.item:hover {
+  animation: 2s linear rotate alternate infinite;
+}
